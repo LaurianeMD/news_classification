@@ -5,3 +5,6 @@ pandas==1.5.3
 tqdm==4.65.0
 numpy==1.23.5
 gradio==3.4.1
+fastapi 
+#"uvicorn[standard]"
+pydantic
