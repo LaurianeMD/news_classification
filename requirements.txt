@@ -1,0 +1,7 @@
+torch==2.0.0
+transformers==4.30.0
+scikit-learn==1.2.2
+pandas==1.5.3
+tqdm==4.65.0
+numpy==1.23.5
+gradio==3.4.1
