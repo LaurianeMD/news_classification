@@ -47,7 +47,7 @@ Navigate to http://localhost:8080/docs to interact with the API using Swagger UI
 
 ---------------------------------------------------------------------------------------------------
 ***french***
-# Classification des Catégories de News avec BERT
+# Classification des Catégories des articles avec BERT
 
 Ce projet vise à classifier automatiquement les catégories de nouvelles à partir des titres et du contenu des articles en utilisant un modèle BERT préalablement entraîné.
 
