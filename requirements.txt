@@ -4,7 +4,11 @@ scikit-learn==1.2.2
 pandas==1.5.3
 tqdm==4.65.0
 numpy==1.23.5
-gradio==3.4.1
-fastapi 
+gradio==4.37.2 #3.4.1
+fastapi == 0.111.0
 #"uvicorn[standard]"
-pydantic
+pydantic==2.8.2
+httpx==0.27.0
+httpcore==1.0.5
+httptools==0.6.1
+
