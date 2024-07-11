@@ -52,7 +52,7 @@ app = FastAPI()
 # Load dataset and model
 dataset = NewsDataset(csv_file="./inshort_news_data.csv", max_length=100)
 num_classes = len(dataset.labels_dict)
-model_path = './models/trained_model.pth'  # Path to your trained model
+model_path = './models/trained_model1.pth'  # Path to your trained model
 model = load_model(model_path, num_classes)
 labels_dict = dataset.labels_dict
 

@@ -1,3 +1,9 @@
+---
+title: News_article_classification_bert
+app_file: main.py
+sdk: gradio
+sdk_version: 4.37.2
+---
 # news_classification
 News Article Classification: Combining Headlines and Articles to Categorize News
 
@@ -8,10 +14,10 @@ Ce projet vise à classifier automatiquement les catégories de nouvelles à par
 
 ## Contenu du Projet
 
-- `bert_classification.py` : Contient la définition du modèle `CustomBert` utilisé pour la classification.
+- `bert_classification.py` : Script principal pour l'entraînement du modèle et l'évaluation sur un dataset; Contient la définition du modèle `CustomBert` utilisé pour la classification.
 - `news_dataset.py` : Implémente la classe `NewsDataset` pour charger et prétraiter le dataset de nouvelles.
 - `utils.py` : Fournit des fonctions utilitaires pour charger le modèle entraîné et effectuer des prédictions.
-- `main.py` : Script principal pour l'entraînement du modèle et l'évaluation sur un dataset divisé.
+- `main.py` : Ce script charge un modèle de classification de NEWS, crée une interface utilisateur avec Gradio, et permet aux utilisateurs d'entrer un titre et un article pour obtenir la catégorie prédite de l'article. 
 - `api.py` : Implémente une API web à l'aide de FastAPI pour permettre la prédiction des catégories de nouvelles en temps réel.
 
 ## Installation des Dépendances
@@ -21,16 +27,16 @@ Assurez-vous d'avoir Python 3.7+ installé ainsi que les packages nécessaires :
 ```bash
 pip install -r requirements.txt
 
-## Entraînement du Modèle
-Pour entraîner le modèle, exécutez main.py. Assurez-vous d'avoir un fichier CSV inshort_news_data.csv contenant les données d'entraînement avec les colonnes news_headline et news_article.
+H2 ## Entraînement du Modèle 
 
-bash
-Copier le code
+H2 Pour entraîner le modèle, exécutez main.py. Assurez-vous d'avoir un fichier CSV inshort_news_data.csv contenant les données d'entraînement avec les colonnes news_headline et news_article.
+
+
 python main.py
 Batch Size : Le script utilise un batch size de 8 par défaut pour l'entraînement et l'évaluation.
 Epochs : Le modèle est entraîné sur 3 epochs par défaut.
-Loss : À la fin de l'entraînement, un modèle avec une précision de 95% et une perte de 0.2 est obtenu.
-Le modèle entraîné est sauvegardé sous ./models/trained_model.pth.
+Loss : À la fin de l'entraînement, un modèle avec une précision de 96% et une perte de 0.1 est obtenu.
+Le modèle entraîné est sauvegardé sous ./models/trained_model1.pth.
 
 ## Utilisation de l'API Web
 Pour utiliser l'API web pour la prédiction des catégories de news :
@@ -101,7 +107,7 @@ python main.py
 
 Batch Size : 8 (par défaut)
 Epochs : 3 (par défaut)
-Précision : 95%, Perte : 0.2 après l'entraînement.
+Précision : 96%, Perte : 0.1 après l'entraînement.
 Modèle sauvegardé à ./models/trained_model.pth.
 
 ## Utilisation de l'API Web

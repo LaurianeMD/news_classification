@@ -88,5 +88,5 @@ if __name__ == "__main__":
         import os
         os.makedirs('./models', exist_ok=True)
 
-        torch.save(model.state_dict(), './models/trained_model.pth')
+        torch.save(model.state_dict(), './models/trained_model1.pth')
 

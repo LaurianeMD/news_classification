@@ -30,6 +30,6 @@ def predict_category(headline, article, model, labels_dict, max_length=100):
         inv_labels_dict = {v: k for k, v in labels_dict.items()}
         category = inv_labels_dict[pred.item()]
 
-    score = round(score*100, 2) 
+    score = round(score, 2) 
 
     return category, score
