@@ -7,7 +7,8 @@ sdk_version: 4.37.2
 # news_classification
 News Article Classification: Combining Headlines and Articles to Categorize News
 
-# **News Classification Using BERT**
+# **News Classification Using BERT**   [Link of the application on hugging face([URL_du_lien](https://huggingface.co/spaces/LaurianeMD/News_article_classification_bert))
+
 This project utilizes BERT (Bidirectional Encoder Representations from Transformers) for classifying news articles into predefined categories. The model achieves an accuracy of 96% and a loss of 0.1 on the test dataset.
 
 ## **Dataset**
