@@ -52,6 +52,7 @@ json
   "headline": "50-year-old problem of biology solved by Artificial Intelligence",
   "article": "DeepMind's AI system 'AlphaFold' has been recognised as a solution to \"protein folding\", a grand challenge in biology for over 50 years. DeepMind showed it can predict how proteins fold into 3D shapes, a complex process that is fundamental to understanding the biological machinery of life. AlphaFold can predict the shape of proteins within the width of an atom."
 }
+
 Exemple de réponse attendue :
 
 json
