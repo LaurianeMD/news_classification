@@ -47,7 +47,7 @@ Envoyez des requêtes POST à http://localhost:8080/predict/ avec les données d
 Exemple de requête JSON pour la prédiction :
 
 json
-Copier le code
+
 {
   "headline": "50-year-old problem of biology solved by Artificial Intelligence",
   "article": "DeepMind's AI system 'AlphaFold' has been recognised as a solution to \"protein folding\", a grand challenge in biology for over 50 years. DeepMind showed it can predict how proteins fold into 3D shapes, a complex process that is fundamental to understanding the biological machinery of life. AlphaFold can predict the shape of proteins within the width of an atom."
@@ -55,7 +55,7 @@ Copier le code
 Exemple de réponse attendue :
 
 json
-Copier le code
+
 {
   "category": "Science",
   "score": 94.23
@@ -70,10 +70,7 @@ Ce `README.md` fournit une introduction, des instructions d'installation, des d�
 
 ecris bien la partie entrainement et les autres pour le readme.md
 ChatGPT
-Bien sûr ! Voici le contenu du fichier README.md avec une section détaillée sur l'entraînement du modèle et d'autres ajustements :
 
-markdown
-Copier le code
 ## Classification des Catégories de News avec BERT
 
 Ce projet vise à classifier automatiquement les catégories de nouvelles à partir des titres et du contenu des articles en utilisant un modèle BERT préalablement entraîné.
