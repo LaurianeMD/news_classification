@@ -21,20 +21,17 @@ Ce projet vise à classifier automatiquement les catégories de nouvelles à par
 - `api.py` : Implémente une API web à l'aide de FastAPI pour permettre la prédiction des catégories de nouvelles en temps réel.
 
 ## Installation des Dépendances
-
-Assurez-vous d'avoir Python 3.7+ installé ainsi que les packages nécessaires :
-
-```bash
 pip install -r requirements.txt
 
-**## Entraînement du Modèle** 
+## Entraînement du Modèle 
  Pour entraîner le modèle, exécutez main.py. Assurez-vous d'avoir un fichier CSV inshort_news_data.csv contenant les données d'entraînement avec les colonnes news_headline et news_article.
 
 
 python main.py
-Batch Size : Le script utilise un batch size de 8 par défaut pour l'entraînement et l'évaluation.
-Epochs : Le modèle est entraîné sur 3 epochs par défaut.
-Loss : À la fin de l'entraînement, un modèle avec une précision de 96% et une perte de 0.1 est obtenu.
+
+**Batch Size** : Le script utilise un batch size de 8 par défaut pour l'entraînement et l'évaluation.
+**Epochs** : Le modèle est entraîné sur 3 epochs par défaut.
+**Loss** : À la fin de l'entraînement, un modèle avec une précision de 96% et une perte de 0.1 est obtenu.
 Le modèle entraîné est sauvegardé sous ./models/trained_model1.pth.
 
 ## Utilisation de l'API Web
@@ -93,7 +90,6 @@ Ce projet vise à classifier automatiquement les catégories de nouvelles à par
 
 Assurez-vous d'avoir Python 3.7+ installé ainsi que les packages nécessaires :
 
-```bash
 pip install -r requirements.txt
 
 ## Entraînement du Modèle
@@ -112,7 +108,7 @@ Modèle sauvegardé à ./models/trained_model.pth.
 ## Utilisation de l'API Web
 Pour utiliser l'API web pour la prédiction des catégories de news :
 
-Lancez l'API avec FastAPI en exécutant api.py.
+Lancez l'API avec FastAPI en exécutant api.py:
 
 uvicorn api:app --host localhost --port 8080
 
@@ -138,9 +134,6 @@ Assurez-vous d'avoir une connexion Internet active lors de l'exécution de l'API
 
 Ce projet démontre l'utilisation de modèles NLP avancés comme BERT pour la classification automatique des données textuelles, spécifiquement dans le domaine des nouvelles et articles. Pour plus d'informations, n'hésitez pas à consulter la documentation des librairies utilisées comme Transformers et FastAPI.
 
-
-
-Ce projet démontre l'utilisation de BERT pour la classification automatique de données textuelles, spécifiquement dans le domaine des nouvelles et articles. Pour plus d'informations, consultez la documentation des librairies utilisées comme Transformers et FastAPI.
 
 
 
