@@ -11,7 +11,7 @@ News Article Classification: Combining Headlines and Articles to Categorize News
 This project utilizes BERT (Bidirectional Encoder Representations from Transformers) for classifying news articles into predefined categories. The model achieves an accuracy of 96% and a loss of 0.1 on the test dataset.
 
 ## **Dataset**
-The dataset used in this project is sourced from Inshorts, containing short news articles categorized into various topics.
+The dataset used in this project is inshort_news_data.csv, containing short news articles categorized into various topics.
 
 ## **Model Architecture**
 The model architecture is based on a custom BERT model fine-tuned for sequence classification:
@@ -30,8 +30,8 @@ The model is trained for 3 epochs with the following steps:
 **Evaluation:** After each epoch, the model is evaluated on a held-out validation set to measure accuracy and loss.
 
 **Results**
-Accuracy: 95%
-Loss: 0.2
+Accuracy: 96%
+Loss: 0.1
 Usage
 To use the trained model for inference:
 
@@ -104,7 +104,7 @@ json
 }
 Assurez-vous d'avoir une connexion Internet active lors de l'exécution de l'API pour permettre le chargement du tokenizer BERT.
 
-Ce projet démontre l'utilisation de modèles NLP avancés comme BERT pour la classification automatique des données textuelles, spécifiquement dans le domaine des nouvelles et articles. Pour plus d'informations, n'hésitez pas à consulter la documentation des librairies utilisées comme Transformers et FastAPI.
+
 
 
 
