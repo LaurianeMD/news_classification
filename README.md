@@ -111,7 +111,7 @@ Lancez l'API avec FastAPI en exécutant api.py:
 uvicorn api:app --host localhost --port 8080
 
 Accédez à http://localhost:8080 dans votre navigateur pour vérifier que l'API est en ligne.
-Envoyez des requêtes POST à http://localhost:8080/predict/ avec les données d'entrée requises pour obtenir des prédictions de catégories de news.
+Envoyez des requêtes POST à [http://localhost:8080/predict/](http://localhost:8080/docs#/default/prediction_predict__post) avec les données d'entrée requises pour obtenir des prédictions de catégories de news.
 Exemple de requête JSON pour la prédiction :
 
 json
