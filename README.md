@@ -55,7 +55,8 @@ Ce projet vise à classifier automatiquement les catégories de nouvelles à par
 - `bert_classification.py` : Contient la définition du modèle `CustomBert` utilisé pour la classification.
 - `news_dataset.py` : Implémente la classe `NewsDataset` pour charger et prétraiter le dataset de nouvelles.
 - `utils.py` : Fournit des fonctions utilitaires pour charger le modèle entraîné et effectuer des prédictions.
-- `main.py` : Script principal pour l'entraînement du modèle et l'évaluation sur un dataset divisé.
+- `main.py` :  charge un modèle pré-entraîné pour la classification des catégories de nouvelles, crée une interface utilisateur web avec Gradio
+  pour permettre aux utilisateurs de  soumettre des titres et des articles, et affiche la catégorie prédite pour ces nouvelles.
 - `api.py` : Implémente une API web à l'aide de FastAPI pour permettre la prédiction des catégories de nouvelles en temps réel.
 
 ## Installation des Dépendances
