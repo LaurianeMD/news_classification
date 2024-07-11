@@ -7,9 +7,45 @@ sdk_version: 4.37.2
 # news_classification
 News Article Classification: Combining Headlines and Articles to Categorize News
 
-# Classification des Catégories de News avec BERT
+**#News Classification Using BERT**
+This project utilizes BERT (Bidirectional Encoder Representations from Transformers) for classifying news articles into predefined categories. The model achieves an accuracy of 96% and a loss of 0.1 on the test dataset.
 
-## Classification des Catégories de News avec BERT
+**Dataset**
+The dataset used in this project is sourced from Inshorts, containing short news articles categorized into various topics.
+
+**Model Architecture**
+The model architecture is based on a custom BERT model fine-tuned for sequence classification:
+
+BERT Model: bert-base-uncased
+Batch Size: 8
+Optimizer: Adam with learning rate 2e-5
+Loss Function: CrossEntropyLoss
+Training
+The model is trained for 3 epochs with the following steps:
+
+**Data Preparation:** The dataset is tokenized using the BERT tokenizer and prepared as PyTorch DataLoader objects.
+
+**Training:** The model is trained using stochastic gradient descent with backpropagation. During training, the loss is minimized and weights are updated iteratively.
+
+**Evaluation:** After each epoch, the model is evaluated on a held-out validation set to measure accuracy and loss.
+
+**Results**
+Accuracy: 95%
+Loss: 0.2
+Usage
+To use the trained model for inference:
+
+Ensure all dependencies are installed (transformers, torch, fastapi, pydantic, etc.).
+Load the model using torch.load() and the appropriate tokenizer.
+Send POST requests to /predict/ endpoint with JSON containing headline and article fields to classify news articles.
+How to Run
+To run the FastAPI application:
+uvicorn api:app --host localhost --port 8080
+
+Navigate to http://localhost:8080/docs to interact with the API using Swagger UI.
+
+***french***
+# Classification des Catégories de News avec BERT
 
 Ce projet vise à classifier automatiquement les catégories de nouvelles à partir des titres et du contenu des articles en utilisant un modèle BERT préalablement entraîné.
 
