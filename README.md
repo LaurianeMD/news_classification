@@ -27,9 +27,8 @@ Assurez-vous d'avoir Python 3.7+ installé ainsi que les packages nécessaires :
 ```bash
 pip install -r requirements.txt
 
-H2 ## Entraînement du Modèle 
-
-H2 Pour entraîner le modèle, exécutez main.py. Assurez-vous d'avoir un fichier CSV inshort_news_data.csv contenant les données d'entraînement avec les colonnes news_headline et news_article.
+**## Entraînement du Modèle** 
+ Pour entraîner le modèle, exécutez main.py. Assurez-vous d'avoir un fichier CSV inshort_news_data.csv contenant les données d'entraînement avec les colonnes news_headline et news_article.
 
 
 python main.py
