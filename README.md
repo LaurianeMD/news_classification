@@ -72,18 +72,18 @@ Pour entraîner le modèle, exécutez main.py. Assurez-vous d'avoir un fichier C
 python main.py
 
 
-## Détails de l'Entraînement
+## Détails de l'Entraînement <br>
 
-Batch Size : 8 (par défaut)
-Epochs : 3 (par défaut)
-Précision : 96%, Perte : 0.1 après l'entraînement.
-Modèle sauvegardé à ./models/trained_model1.pth.
+Batch Size : 8 (par défaut) <br>
+Epochs : 3 (par défaut) <br>
+Précision : 96%, Perte : 0.1 après l'entraînement.<br>
+Modèle sauvegardé à ./models/trained_model1.pth.<br>
 
 ## Utilisation de l'API Web
-Pour utiliser l'API web pour la prédiction des catégories de news :
+Pour utiliser l'API web pour la prédiction des catégories de news :<br>
 
-Lancez l'API avec FastAPI en exécutant api.py:
-
+Lancez l'API avec FastAPI en exécutant api.py:<br>
+'python
 uvicorn api:app --host localhost --port 8080
 
 Accédez à http://localhost:8080 dans votre navigateur pour vérifier que l'API est en ligne.
