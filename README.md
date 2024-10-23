@@ -83,7 +83,7 @@ Modèle sauvegardé à ./models/trained_model1.pth.<br>
 Pour utiliser l'API web pour la prédiction des catégories de news :<br>
 
 Lancez l'API avec FastAPI en exécutant api.py:<br>
-'python
+
 uvicorn api:app --host localhost --port 8080
 
 Accédez à http://localhost:8080 dans votre navigateur pour vérifier que l'API est en ligne.
